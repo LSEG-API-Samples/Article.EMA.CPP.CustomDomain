@@ -123,7 +123,7 @@ int main( int argc, char* argv[] )
 		std::ofstream outFileStream;
 		outFileStream.open(client.fileName.c_str(), ios::out | ios::binary);
 
-		handle = consumer.registerClient(ReqMsg().domainType(MMT_CUSTOM).serviceName("INTERNAL_FEED").name(client.fileName), client, &(client.myFile));
+		handle = consumer.registerClient(ReqMsg().domainType(MMT_CUSTOM).serviceName("INTERNAL_FEED").name(client.fileName), client, &(outFileStream));
 		
 		sleep( 60000 );				// API calls onRefreshMsg(), onUpdateMsg(), or onStatusMsg()
 	}
