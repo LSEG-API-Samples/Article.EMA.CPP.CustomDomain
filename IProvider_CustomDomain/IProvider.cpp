@@ -234,7 +234,7 @@ int main( int argc, char* argv[] )
 	{
 		AppClient appClient;
 
-		OmmProvider provider( OmmIProviderConfig().adminControlDirectory( OmmIProviderConfig::UserControlEnum ).port("14012"), appClient );
+		OmmProvider provider( OmmIProviderConfig().adminControlDirectory( OmmIProviderConfig::UserControlEnum ).port("14002"), appClient );
 
 		for (Int32 i = 0; i < 600; i++)
 		{
