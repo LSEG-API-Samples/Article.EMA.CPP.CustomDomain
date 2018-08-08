@@ -112,7 +112,7 @@ int main( int argc, char* argv[] )
 {
 	try {
 		AppClient client;
-		OmmConsumer consumer( OmmConsumerConfig().host( "192.168.27.53:14002" ).username( "user1" ) );
+		OmmConsumer consumer( OmmConsumerConfig().host( "<ADS's hostname>:14002" ).username( "user1" ) );
 		UInt64 handle = consumer.registerClient( ReqMsg().domainType( MMT_SYMBOL_LIST ).interestAfterRefresh(false).serviceName( "INTERNAL_FEED" ).name( "FILE_LIST" ), client );
 		
 		//Waiting until the list is received
