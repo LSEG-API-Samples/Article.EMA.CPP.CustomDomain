@@ -66,7 +66,7 @@ void AppClient::processCustomRequest(const ReqMsg& reqMsg, const OmmProviderEven
 		inputFile.seekg(0, inputFile.beg);
 
 		//define size of payload in each Refresh message
-		int size = 10000;
+		int size = 65535;
 		int partN = 0;
 		char * buffer = new char[size];
 
