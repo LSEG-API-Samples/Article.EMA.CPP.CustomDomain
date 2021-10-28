@@ -2,15 +2,15 @@
 // *|            This source code is provided under the Apache 2.0 license      --
 // *|  and is provided AS IS with no warranty or guarantee of fit for purpose.  --
 // *|                See the project's LICENSE.md for details.                  --
-// *|           Copyright Thomson Reuters 2016. All rights reserved.            --
+// *|           Copyright Refinitiv 2021. All rights reserved.            --
 ///*|-----------------------------------------------------------------------------
 
 #include "IProvider.h"
 #include <fstream>
 #include <iostream>
 
-using namespace thomsonreuters::ema::access;
-using namespace thomsonreuters::ema::rdm;
+using namespace refinitiv::ema::access;
+using namespace refinitiv::ema::rdm;
 using namespace std;
 
 UInt64 itemHandle = 0;
